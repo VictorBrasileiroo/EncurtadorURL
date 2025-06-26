@@ -1,4 +1,4 @@
-# 💬 API e Frontend UrlDux
+# 💬 UrlDux
 <img src="https://raw.githubusercontent.com/VictorBrasileiroo/EncurtadorURL/master/banner.png" alt="Banner do Projeto UrlDux" style="width: 100%; max-width: 800px; height: auto;"></img>
 
 ![.NET Core](https://img.shields.io/badge/.NET%20Core-8.0-purple)
