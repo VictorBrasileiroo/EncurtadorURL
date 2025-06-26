@@ -40,28 +40,6 @@ Para rodar o projeto localmente, você precisará de:
     - .NET SDK 8.0
     - SQL Server (LocalDB ou uma instância acessível)
     - Git
----
-
-## 🔄 Fluxo de Funcionamento
-
-O UrlDux opera em dois fluxos principais: o encurtamento da URL e o redirecionamento.
-
-```mermaid
-graph TD
-    A[Usuário] --> |1: POST /api/Url/encurtar com URL Longa| B(API UrlDux - Backend)
-    B --> |2: Salvar UrlModel sem CodigoCurto| C(Banco de Dados)
-    C --> |3: Gerar ID e Retornar UrlModel com ID| B
-    B --> |4: Codificar ID para CodigoCurto (Base62)| B
-    B --> |5: Atualizar UrlModel com CodigoCurto| C
-    C --> |6: Confirmar salvamento| B
-    B --> |7: Retornar UrlEncurtada para Usuário| A
-
-    D[Navegador do Usuário] --> |1: GET /codigoCurto| F(API UrlDux - Backend)
-    F --> |2: Buscar UrlModel por CodigoCurto| C
-    C --> |3: Retornar UrlModel com URL Longa| F
-    F --> |4: Redirecionar HTTP 301| D
-    D --> |5: Acessar URL Longa| E[Serviço da URL Original
-```
 
 ---
 
@@ -148,6 +126,8 @@ dotnet run --project EncurtadorURL.API
 ---
 
 ## 📂 Estrutura do Projeto
+
+```bash
 ├── EncurtadorURL.sln
 │
 ├── EncurtadorURL.API/             # Projeto da API (endpoints, controllers, Program.cs)
@@ -170,6 +150,7 @@ dotnet run --project EncurtadorURL.API
 │   ├── Context/
 │   ├── Repositories/
 │   ├── Migrations/
+```
 
 ## ⚖️ Licença
 
