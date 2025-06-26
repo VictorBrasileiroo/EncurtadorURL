@@ -13,8 +13,7 @@
 
 ## 🚀 Visão Geral
 
-O **UrlDux** é um encurtador de URLs completo, desenvolvido para transformar links longos e complexos em URLs curtas, memoráveis e fáceis de compartilhar. O projeto visa demonstrar uma arquitetura de aplicação moderna, combinando um backend robusto com um frontend ágil e intuitivo.
-
+O **UrlDux** é um encurtador de URLs completo, desenvolvido para transformar links longos e complexos em URLs curtas, memoráveis e fáceis de compartilhar. O projeto visa demonstrar uma arquitetura de aplicação moderna.
 Construído com **ASP.NET Core 8.0** e **C# 12**, a aplicação adota uma **arquitetura limpa**, utiliza algoritmos de codificação eficientes como **Base62** para a geração de códigos curtos únicos, e possui validações de entrada robustas via **FluentValidation**, com documentação de API automática via **Swagger**.
 
 ---
